@@ -20,7 +20,7 @@ jobs:
     - run: npm ci
     - id: collect
       run: |
-        echo "current_date=$(node bin/collect.js zistersdorf_Österreich_2760510 | grep \"Write data for\" | cut -c 16-26)" >> $GITHUB_ENV
+        echo "current_date=$(node bin/collect.js zistersdorf_Österreich_2760510 | grep "Write data for" | cut -c 16-26)" >> $GITHUB_ENV
 
     - name: Commit changes to repository
       uses: EndBug/add-and-commit@v7
