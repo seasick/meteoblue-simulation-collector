@@ -62,7 +62,7 @@ if (!process.argv[2]) {
 
     console.log(`Write to ${targetFile}`);
 
-    await writeFile(targetFile, JSON.stringify(grouped[day], null, 2));
+    await writeFile(targetFile, JSON.stringify(grouped[day], null, 2) + '\n');
   }
 
   console.log(`Write data for ${days[days.length - 1]}`);
